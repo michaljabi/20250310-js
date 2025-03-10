@@ -15,15 +15,20 @@
 const cat = {
 	whiskers: 'long',
 	eyes: 2,
-	voice: function () {
+	voice() {
 		return 'Mrauuu';
 	},
+	// voice() {
+	// 	return 'Mrauuu2';
+	// },
 	alwaysLandsOn4Feet: true
 };
 
 // #1 Zadanie:
 // Pokaż na konsoli wynik działania metody voice
+console.log(cat.voice());
 
+cat.voice(); //=
 
 
 
@@ -49,11 +54,45 @@ console.log(myUser['name'])
 	// a) Nie można mieć kilka tak samo nazwanych pól w obiekcie
 	// b) Jeśli wystąpi taka sytuacja to "wartość ostatniego pola wygrywa"
 
+const myExample = {
+	sum: 200,
+	sum: 4000,
+	sum: 2
+	// TODO: pokaz gdzie to można wykorzystać na swoją korzyść. (future)
+}
+
+console.log(myExample.sum);
 
 
 // Poza dynamicznym zapisem, można "dostać się" do wszystkich pól obiektu - dzięki pętli for...in
-for(let key in myUser) {
+for(const key in myUser) {
 	console.log(key);
+}
+
+// przejście po wartościach:
+for(const key in myUser) {
+	console.log(myUser[key]);
+}
+
+// coś co zastępuje for in
+console.log(Object.values(myUser))
+console.log(Object.keys(myUser))
+console.log(Object.entries(myUser))
+
+for(const key of Object.keys(myUser)) {
+	console.log(key);
+}
+
+for(const num of [1, 2, 3]) {
+	console.log(num);
+}
+
+for(const num of 'po prostu string') {
+	console.log(num);
+}
+
+for(const num of new Set([2, 3, 4])) {
+	console.log(num);
 }
 
 
@@ -70,6 +109,9 @@ console.log(tree.branch.leaf)
 // #3 Zadanie:
 // Pokaż na konsoli wartość isRoot w obiekcie tree:
 
+console.log(tree.branch.isRoot)
+
+console.log(tree['branch']['isRoot'])
 
 /**
  * W odróżnieniu od typów prostych (primitives).
