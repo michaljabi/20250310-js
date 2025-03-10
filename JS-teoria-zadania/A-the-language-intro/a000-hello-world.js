@@ -2,6 +2,36 @@ var welcomeMessage = 'Hello World!'
 
 console.log(welcomeMessage);
 
+function hello() {
+   console.log('Hello!')
+}
+
+hello()
+hello()
+hello()
+
+let x = 0
+
+setInterval(() => {
+   console.log('! :) ....', x++);
+}, 1000)
+
+console.log(80 + 90 + '?' + '!');
+
+console.log(Math.PI)
+
+
+// skosko
+// try {
+//    coskaoskaco
+// } catch(e) {
+//    console.log(e.message);
+// }
+
+
+console.log('!')
+
+
 // to jest prosty komentarz liniowy
 
 /*
