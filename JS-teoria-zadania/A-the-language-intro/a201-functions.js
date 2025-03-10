@@ -24,6 +24,42 @@ sayHello()
 // Jak szybko powtórzyć te zapisy 4 razy na ekranie:
 // chcemy widzieć 4 pudełka jedno pod drugim
 
-console.log('  ____________')
-console.log('|  in the box  |')
-console.log('  ------------')
+// sposób 1:
+function printTheBox(text = 'in the box') {
+	
+	console.log(' ', '_'.repeat(text.length+1))
+	console.log('| ', text,  '|')
+	console.log(' ', '-'.repeat(text.length+1))
+}
+
+printTheBox('a')
+printTheBox()
+printTheBox('hello')
+printTheBox(' coś jeszcze innego ')
+
+console.log(Math instanceof Object)
+
+console.log(printTheBox instanceof Function);
+console.log(printTheBox instanceof Object);
+
+
+
+// sposób 2:
+for(let x = 0; x < 4; x++) {
+	console.log('  ____________')
+	console.log('|  in the box  |')
+	console.log('  ------------')
+}
+
+
+// sposób 3:
+console.log('---------------------------------------------------------------------------------------')
+
+
+console.log("  ____________\n|in the box")
+console.log('  ____________\n|in the box')
+console.log(`  ____________
+| in the box |
+  ----------`)
+
+console.log('---- END')
