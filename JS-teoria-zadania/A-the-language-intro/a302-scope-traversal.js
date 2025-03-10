@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Tutaj testujemy zachowanie kolejnych poziomów w przypadku zakresów (SCOPES);
  *
@@ -10,6 +11,12 @@
  * Zobacz jak zachowuje się i co pokazuje console.log z linii 28
  *
  * */
+
+// globalThis
+
+// console.log(globalThis === global)
+
+globalThis.myColor = 'last-one';
 
 const myColor = 'red';
 
@@ -26,6 +33,7 @@ function inception() {
 				const myColor = 'diamond';
 
 				console.log(myColor);
+				console.log(globalThis.myColor);
 			}
 			fourthDream();
 		}
