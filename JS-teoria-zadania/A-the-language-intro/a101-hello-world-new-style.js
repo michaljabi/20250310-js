@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * Po 2015 dostajemy zasięg leksykalny zmiennych i 2 słowa kluczowe
  * używamy let i const zamiast var
@@ -7,7 +9,14 @@
  *
  * */
 
+// PascalCase
+// camelCase
+// SNAKE_CASE
+
+// Zasada: Favor const over let.
 const welcomeMessage = 'Hello World!'
+
+// welcomeMessage = ''
 
 console.log(welcomeMessage);
 
@@ -15,12 +24,14 @@ console.log(welcomeMessage);
 
 
 // Nazwy zmiennych piszemy camelCase:
-let myNumber = 10;
+let myNumber = 0;
 
 // Staramy się nie zmieniać typu zmiennych, czyli number ma zostać number'em:
 myNumber = 100;
 console.log(myNumber + 200);
-// myNumber = 'hello'; // NIE ! tego nie praktykuj - więcej o tym powiemy w ./a103-js-is-dynamic.js
+myNumber = 'hello'; // NIE ! tego nie praktykuj - więcej o tym powiemy w ./a103-js-is-dynamic.js
+
+console.log(myNumber);
 
 // Jeśli wiemy że nie będziemy nigdzie zmieniać wartości zmiennej - to zamiast tego robimy stałą:
 const luckyNumber = 7;
