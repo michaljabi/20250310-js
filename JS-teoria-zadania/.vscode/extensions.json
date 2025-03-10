@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "achil.vscode-javascript-repl",
+        "ritwickdey.LiveServer",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "christian-kohler.path-intellisense",
+    ]
+}
