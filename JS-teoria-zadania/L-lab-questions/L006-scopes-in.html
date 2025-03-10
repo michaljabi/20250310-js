@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // globalThis.myColor = 'last-one';
+
+        // W przeglądarce użycie var spowoduje (!!) przedostanie się myColor do global scope!
+        // nie jest jednak temu winien sam "var" - tylko sposób wykonania tego skryptu.
+        // ponieważ jeśli skrypt oreślimy jako <script type="module"> - to wtedy `myColor` nie przedostanie się do global scope
+        // patrz: przykład poniżej z otherSample
+        var myColor = 'red';
+
+        function inception() {
+            const myColor = 'cristal';
+
+            function secondDream() {
+                const myColor = 'sapphire';
+
+                function thirdDream() {
+                    const myColor = 'emerald';
+
+                    function fourthDream() {
+                        const myColor = 'diamond';
+
+                        console.log(myColor);
+                        console.log(globalThis.myColor);
+                    }
+                    fourthDream();
+                }
+                thirdDream();
+            }
+            secondDream();
+        }
+        inception();
+
+    </script>
+
+    <script type="module">
+         // tutaj ponieważ użyte jest type="module" to nie ma problemu "wycieku" do global scope.
+         var otherSample = 'not leaked';
+         console.log('otherSample is', globalThis.otherSample)
+    </script>
+</body>
+</html>
