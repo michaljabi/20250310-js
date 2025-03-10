@@ -9,9 +9,9 @@
 // 2. Make it right
 // 3. Make it fast
 
-function zz(name = 'Nieznajomy') {
-    return 'Witaj ' + name;
+function sayHelloTo(name = 'Nieznajomy') {
+    console.log('Witaj', name);
 } 
 
-console.log(zz())
-console.log(zz('Michał'))
+sayHelloTo()
+sayHelloTo('Michał')
