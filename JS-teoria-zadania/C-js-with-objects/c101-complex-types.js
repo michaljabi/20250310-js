@@ -31,7 +31,8 @@ const cat = {
 
 // Na początku user posiada tylko pole "name"
 const myUser = {
-	name: 'Janina'
+	name: 'Janina',
+	// lastName: '' // od razu określam, że będzie takie pole i to typu string.
 };
 
 // Potem dynamicznie dodawane jest pole "lastName" z wartością:

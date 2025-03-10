@@ -15,6 +15,22 @@
 // Przykład tablicy:
 const mutableArray = [ 'a', 'b', 'c', 'd' ];
 
+mutableArray.push('e')
+
+console.log(mutableArray[0])
+console.log(mutableArray[1])
+console.log(mutableArray[2])
+console.log(mutableArray[3])
+
+console.log(mutableArray.length)
+
+console.log(mutableArray[4])
+
+console.log(mutableArray[5])
+
+console.log(mutableArray[4000])
+console.log(mutableArray[-1])
+
 // Sprawdzenie długości tablicy
 console.log(mutableArray.length);
 

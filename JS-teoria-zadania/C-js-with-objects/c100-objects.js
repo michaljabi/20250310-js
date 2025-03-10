@@ -1,3 +1,5 @@
+// @ts-check
+
 /**
  * JavaScript posiada tzw. literały obiektowe.
  * Pozwalają one utworzyć dany obiekt - bez potrzeby definiowania jego struktury
@@ -10,6 +12,11 @@
 const user = {
 	name: 'Marek'
 };
+
+user.lastName = 'Kowalski';
+
+
+
 
 // użycie obiektu:
 console.log(user);
