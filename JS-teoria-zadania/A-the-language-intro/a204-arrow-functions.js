@@ -14,13 +14,36 @@
 
  */
 
+const myWord = 'world';
+
+const nomralString = "Hello\n" + myWord;
+console.log(nomralString);
+
+const multilineString = `Hello
+${myWord} `;
+console.log(multilineString);
+
+
 // Nowości ES6+ (po 2015r):
 // dostajemy Arrow functions:
 const newFunc = ( name ) => `Hello ${name}!`;
 const newFunc2 = name => `Hello ${name}!`;
 const newFunc3 = ( name ) => {
+
+
+    // która jest mulitilne - czyli ma swoje ciało....
+
     return `Hello ${name}!`;
 };
+
+newFunc('Michał'); //=
+newFunc2('Michał'); //=
+
+newFunc3('Michał'); //=
+
+setTimeout(() => {
+    console.log('Hello after 3sec')
+}, 3000)
 
 // Przypomnienie:
 // Funkcja może zwracać inną funkcję:
@@ -31,9 +54,9 @@ function hello() {
 const innerFn = hello();
 // #2 Zadanie:
 // Jak wyciągnąć wynik "World" ?
+console.log(innerFn());
 
-
-
+console.log(hello()())
 
 
 

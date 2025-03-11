@@ -44,9 +44,14 @@ console.log(sumMyNumbers(10, 20))
 let sampleNumber = 10
 // To powinniśmy je również móc przekazać jako parametr w funkcji:
 
-const sayHello = function() {
+const sayHello = function xyz() {
 	console.log('Hello John!')
 }
+
+
+// Jest coś takiego jak IIFE -> w JS (natychmiast wywołuje function expression zapisane inline)
+// xyz();
+
 // Zapis powyżej to tzw. "Function expression" - wyrażenie funkcji
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 
