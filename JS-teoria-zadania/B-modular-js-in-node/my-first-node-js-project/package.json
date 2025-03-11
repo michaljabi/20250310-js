@@ -1,0 +1,14 @@
+{
+  "name": "my-first-node-js-project",
+  "version": "1.0.0",
+  "description": "> Napiszę program do wyświetlania bannerów w terminalu. Użyję do tego JavaScript w Node.js potem dorzucę TS (`tsc` compiler)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "list-catalogues": "dir"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
