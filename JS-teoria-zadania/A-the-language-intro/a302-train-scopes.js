@@ -9,6 +9,20 @@ const helloWorld = "hello World!";
 // pomocna dłoń?
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+function showH() {
+    
+    // console.log(helloWorld.charAt(0) + helloWorld.at(-1))
+    console.log(helloWorld.charAt(0) + helloWorld.charAt(helloWorld.length-1))
+
+    const x = 10;
+    function showCalculation() {
+        console.log(x + 400);
+    }
+    showCalculation();
+}
+
+showH();
+
 // #2 Zadanie:
 // Dopisz w środku funkcji zmienną lokalną x = 10
 
