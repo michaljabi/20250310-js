@@ -13,6 +13,19 @@
 
  */
 
+ const ref = function() {
+	console.log('Call after 3sec')
+ }
+
+ // setTimeout(ref, 3000)
+ // po 3 sec dzieje się to:
+ ref();
+
+
+ setTimeout(function() {
+	console.log('I\'m called callback.')
+ }, 1000)
+
 /*-----------> PART 1: >---------------------------------*/
 
 // Funkcja anonimowa, która posiada wskaźnik "sumMyNumbers"
