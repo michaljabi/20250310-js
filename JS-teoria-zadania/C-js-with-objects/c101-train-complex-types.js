@@ -48,9 +48,9 @@ console.log({} === {})
 function shoppingCartItemFactory(name = '', price = 0, tax = 0.23) {
 
 	return {
-		name: name,
-		price: price,
-		tax: tax, 
+		name,
+		price,
+		tax, 
 		get grossPrice() {
 			return Number((this.price + this.price * this.tax).toFixed(2));
 		}
