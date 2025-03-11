@@ -16,4 +16,5 @@
  *      - będzie ona bardziej "oczywista" jeśli poznamy setTimeout, setInterval (taski) oraz Promise (mikrotaski)
  * 9. JS pozwala DOWOLNIE rozszerzać obiekty, DYNAMICZNIE zmieniać typy oraz DOWOLNIE przekazywać ilość argumentów do funkcji, metod i konstuktorów
  * 10. występuje hoisting deklaracji funkcji (dobry, bo można go wykorzystać) i słów kluczowych var (niedobry, kolejny powód żeby nie stosować var !!!!)
+ * 11. Słowo kluczowe this zachowuje się inaczej w zaleśności od kontekstu (JS context)
  */
