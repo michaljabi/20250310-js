@@ -39,9 +39,34 @@ const shoppingCartItem2 = {
 	tax: 0.23
 }
 
+shoppingCartItem2.tax = 0.05
+
 // #3 Wykaż, że zainicjowanie dwóch nowych pustych obiektów po porównaniu === da nam wartość false.
 // Wyjaśnij dlaczego tak się dzieje
+console.log({} == {})
+
+console.log(new Object() == new Object())
+
+const scI = new Object({
+	name: 'iPhone'
+})
+
 console.log({} === {})
+
+const a = {};
+const b = a;
+
+console.log(a == b);
+console.log(a === b);
+
+
+console.log(1 === 1)
+console.log(1 == 1)
+
+console.log(1 == '1')
+console.log(1 === '1')
+
+
 
 
 
