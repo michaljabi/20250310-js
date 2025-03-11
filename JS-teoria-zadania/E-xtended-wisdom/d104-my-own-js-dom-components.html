@@ -14,6 +14,24 @@
 </head>
 <body>
     
+    <div>
+        <em>Hello</em>
+        <mark>zakreślone</mark>
+        <strong>pogrubione</strong>
+        <code>czcionka mononospace</code>
+        <pre>
+            zachowuje
+
+            białe znaki                 dokładnie tak
+
+            jak jest napisany text...
+        </pre>
+
+        <!-- div>p.hello#hello23>span{hello wolrd} -->
+        <div>
+            <p class="hello" id="hello23"><span>hello world</span></p>
+        </div>
+    </div>
 <!--
      <div class="blue-text">hello</div>
      <div id="blue-text">hello2</div>
@@ -24,7 +42,7 @@
 
 
         const myDiv = document.createElement('div');
-        myDiv.innerText = 'Hello <b>Moto</b>';
+        myDiv.innerHTML = 'Hello <b>Moto</b>';
         myDiv.className = 'blue-text';
 
         document.body.appendChild(myDiv);
