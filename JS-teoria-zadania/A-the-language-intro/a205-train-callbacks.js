@@ -1,6 +1,13 @@
 
+
+// PROVIDER
 function getVatTaxRateFromServer(calculations) {
-	calculations(0.23)
+	
+
+	setTimeout(() => {
+		calculations(0.23)
+		// calculations(0.21)
+	}, 3000)
 }
 
 // #1 Zadanie:
@@ -11,3 +18,11 @@ function getVatTaxRateFromServer(calculations) {
 // Przykładowo pokazanie wyniku:
 // console.log(300 + 300 * vatRate) // gdzie vatRate to odebrany argument z callback
 
+// pokaż na ekranie 0.23
+// jak odebrać 0.23
+
+
+// CONSUMER
+getVatTaxRateFromServer((vat) => {
+	console.log(vat);
+})

@@ -5,16 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-
+	<h1>Hello world</h1>
     <script>
 	    // Klasyczny obiekt ajax:
-	    function onLoad () {
-		    const jsonResponse = JSON.parse(this.responseText);
-		    console.log(jsonResponse)
-	    }
+	    // function onLoad () {
+		//     const jsonResponse = JSON.parse(this.responseText);
+		//     console.log(jsonResponse)
+	    // }
 
 	    const request = new XMLHttpRequest();
-	    request.addEventListener('load', onLoad);
+		// Słowo kluczowe this zachowuje się inaczej w arrow a inaczej w anonymous functions
+	    request.addEventListener('load', (ev) => {
+			// console.log(ev)
+			// debugger;
+			// const jsonResponse = JSON.parse(this.responseText);
+			const jsonResponse = JSON.parse(ev.srcElement.responseText);
+		    console.log(jsonResponse)
+		});
 	    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/1');
 	    request.send();
     </script>
