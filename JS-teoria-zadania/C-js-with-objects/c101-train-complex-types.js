@@ -48,6 +48,7 @@ console.log({} === {})
 function shoppingCartItemFactory(name = '', price = 0, tax = 0.23) {
 
 	return {
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions
 		name,
 		price,
 		tax, 
