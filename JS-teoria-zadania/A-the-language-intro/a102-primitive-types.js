@@ -91,6 +91,16 @@ console.log(typeof myUndefined) // undefined
 // Specjalny typ prosty, którego nie możemy podejrzeć operatorem "typeof"
 console.log(typeof null) // null - UWAGA na typeof w tym przypadku pokazuje "object"
 
+
+// obiawam się null
+let someValue = null;
+
+// someValue();
+// poprawna konstrukcja if jeśli chce odfiltrować Object z użyciem typeof
+if(someValue !== null && typeof someValue === 'object') {
+  console.log('This is an object')
+}
+
 // null w tym przypadku (jako object) to oczywiście pomyłka - bug. Który z powodu kompatybilności wstecz - został w JS.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#null
 
