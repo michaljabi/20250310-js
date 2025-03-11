@@ -7,21 +7,53 @@
     <!-- <script>
         console.log(document.querySelector('h1'))
     </script> -->
+    <style>
+        /*
+        h1 {
+            background-color: aqua;
+        }
+
+        .violet {
+            color: blueviolet;
+        }
+        */
+    </style>
 </head>
 <body>
     
+    <h1 class="bon">Moja strona</h1>
     <h1>Moja strona</h1>
+    <h1 class="h1">Moja strona</h1>
+    <h1 id="h1">Moja strona</h1>
+    <h1 data-h1>Moja strona</h1>
     
     <!--
     
         1. Utwórz Heading poziomu 1 z textem
         2. Dodaj kod JS z console.log np. "123"
         3. Wiedząc o API .querySelector oraz .innerText
+            // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+            // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
         4. Zmień napis w h1 na: "Inna strona"
 
     -->
+        
     <script>
-        console.log(123)
+        // console.log(123)
+        // const heading = new HTMLHeadingElement(); // TAK nie - bd Illegal constructor
+        // const heading = document.createElement('h1');
+        const heading = document.querySelector('h1:not(.bon)');
+        heading.innerText = 'Inna strona 🚀'
+
+        // document.body.append(heading)
+
+        console.log(heading)
+        console.dir(heading)
+
+        console.log(heading instanceof HTMLHeadingElement) 
+        console.log(heading instanceof HTMLElement) 
+        console.log(heading instanceof Element) 
+        console.log(heading instanceof Node) 
     </script>
    
 </body>
