@@ -27,6 +27,7 @@ class ShoppingCartItem extends BaseItem {
     // name = '';
     // price = 0;
     // tax;
+    static field = 20;
 
     constructor(name = '', price = 0, tax = 0.23) {
         super(name)
@@ -41,8 +42,14 @@ class ShoppingCartItem extends BaseItem {
     set grossPrice(value = 0) {
         //....
     }
+
+    static myMethod() {
+        return 'hello'
+    }
 }
 
+console.log(ShoppingCartItem.field);
+console.log(ShoppingCartItem.myMethod());
 
 const shoppingCartItem = new ShoppingCartItem('Komputer', 2000);
 const shoppingCartItem2 = new ShoppingCartItem('iPhone', 3200);
