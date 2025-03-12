@@ -35,3 +35,20 @@ node ./src/main.js
 ```
 npm run start
 ```
+8. Połączenie modułowe plików za pomocą ESM `import/export`
+8.1 Na początek zmiana w [package.json](./package.json):
+```
+"type": "module"
+```
+8.2 Potem trzeba pamiętać o _explicite_ `export` tego co ma być dostępne i _explicite_ `import` tego co chcemy używać
+
+--- 
+
+9. Utwórz w `make-banner.js` funkcje `makeBanner` która dla `text` input wygeneruje banner w fromacie, np. dla "Hello"
+
+```
+*********
+* HELLO *
+*********
+```
+10. Zastosuj tą funkcję w `main.js` dla przykładowego tekstu, wymyśl ten tekst.
