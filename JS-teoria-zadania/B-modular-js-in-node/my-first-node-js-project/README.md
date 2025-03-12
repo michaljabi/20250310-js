@@ -52,3 +52,8 @@ npm run start
 *********
 ```
 10. Zastosuj tą funkcję w `main.js` dla przykładowego tekstu, wymyśl ten tekst.
+
+11. utwórz nowy folder w  src  nazwij go  `app`  a w środku  `app`  przygotuj:  `math-operations.js`
+12.  `math-operations.js`  powinno exportować funkcję  `divideBy`  , zaprojektuj ją tak aby nie pozwalała dzielić przez  `0`  - rzucała wyjątek (  `new Error` ) z odpowiednim komunikatem.
+13. Wywołaj  divideBy  bez błędu i z błędem (przekaż  0  jako 2gi argument) w  `main.js`  i obsłuż blokami  `try` - `catch` .
+14. skorzystaj z materiału:  `c202` i dokumentacji MDN 
