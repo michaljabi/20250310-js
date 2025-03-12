@@ -7,7 +7,8 @@
     "start": "node ./src/main.js",
     "list-catalogues": "dir",
     "ts-init": "tsc --init",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
   },
   "keywords": [],
   "author": "",
