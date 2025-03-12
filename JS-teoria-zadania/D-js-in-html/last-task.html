@@ -9,3 +9,39 @@
     bussines:
     [1] -> [2] -> [3] -> [4]
 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 42px;
+            padding: 20px;
+            cursor: pointer;
+            margin-left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        const btn = document.createElement("button");
+
+        let x = 0
+        btn.innerText = "0";
+
+        btn.addEventListener("click", () => {
+            // console.log('!!!')
+            x++;
+            btn.innerText = String(x);
+        })
+
+        document.body.append(btn)
+    </script>
+</body>
+
+</html>
