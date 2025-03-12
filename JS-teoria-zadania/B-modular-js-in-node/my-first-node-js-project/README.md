@@ -115,3 +115,59 @@ npm init @eslint/config@latest
     },
   }
 ```
+
+21. Dodatkowy skrypt w [package.json](./package.json) który poprawi "auto fixable" issues przy lintowaniu:
+
+```json
+ "lint:fix": "eslint src --fix"
+```
+
+22. Przechodzimy do konfiguracji `typescript`, w pliku [tsconfig.json](./tsconfig.json) wprowadzamy kilka zmian:
+
+```json
+"allowJs": true,
+"rootDir": "./src",
+"outDir": "./dist",
+"module": "ESNext"
+```
+
+dodatkowo poza `compilerOptions` ustawiamy:
+
+```json
+  "exclude": ["./eslint.config.js"],
+  "include": ["src/**/*.ts"]
+```
+
+23. Zmieniamy rozszerzenie pliku `.src/main.js` na [main.ts](./src/main.ts) i dopisujemy skrypt do uruchomienia budowania projektu w [package.json](./package.json):
+
+```json
+ "build": "tsc"
+```
+
+24. Uruchamiamy `npm run build` żeby zobaczyć co pojawi się w `./dist`
+
+25. Doinstalowujemy `npm i -D tsx` - narzędzie do uruchamiania `.ts` bezpośrednio, i naprawiamy skrypt `start` + dopisujemy `dev`:
+
+```json
+ "start": "node ./dist/main.js",
+ "dev": "tsx watch ./src/main.ts"
+```
+
+26. Teraz `start` i `dev` powinny działać (możemy sprawdzić w okienku _View -> Open View -> NPM_)
+
+27. Migrujemy pozostałe pliki do `.ts` ustawiając im rozszerzenia i poprawiając typowanie. Finalnie mamy pliki:
+
+- [make-banner.ts](./src/make-banner.ts)
+- [math-operations.ts](./src/app/math-operations.ts)
+
+28. Instalujemy dla sprawdzenia `dependencies` - `lodash`:
+
+```
+npm i lodash
+```
+
+29. Doinstalowujemy mu definicje typów:
+
+```
+npm i -D @types/lodash
+```
