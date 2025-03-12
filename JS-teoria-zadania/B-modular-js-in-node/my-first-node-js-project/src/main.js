@@ -28,5 +28,6 @@ try {
         console.log('Unhandled, unknown... error', e)
     }
 } finally {
-
+    let x = 10
+    console.log('I will always run...', x)
 }
