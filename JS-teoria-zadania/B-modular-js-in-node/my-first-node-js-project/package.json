@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/main.js",
-    "list-catalogues": "dir"
+    "list-catalogues": "dir",
+    "ts-init": "tsc --init"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }
