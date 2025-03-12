@@ -6,15 +6,15 @@ import { makeBanner } from './make-banner.js'
 
 console.log('Witaj w BannerShow')
 
-makeBanner('To jest mój testowy banner')
+makeBanner('To jest mój test!')
 // console.log(collection.default)
 // console.log(myTest)
 
-console.log('------')
+console.log('---- !!! --')
 
 try {
   // s
-  console.log('divide 100 / 10 =', divideBy(100, 10))
+  console.log('divide 10 / 10 =', divideBy(10, 10))
   console.log('divide 100 / 2 =', divideBy(100, 2))
   console.log('divide 56 / 0 =', divideBy(56, 0))
 } catch (e) {
