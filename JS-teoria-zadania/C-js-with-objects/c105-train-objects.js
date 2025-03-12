@@ -24,6 +24,11 @@ console.log(shop)
 // pokaż na konsoli napis "banana welcome!" używając danych z obiektu
 console.log(shop.fruits[2], shop.greetings())
 
+// zadanie dodatkowe, wyciągamy banana 
+// za pomocą array destucturing
+const [,,banana = 'no fruit'] = shop.fruits;
+
+console.log(banana)
 
 // #3 Zadanie:
 // utwórz 2 obiekt concurrentShop który będzie klonem poprzedniego (zadeklaruj z tymi samymi wartościami)
