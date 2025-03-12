@@ -44,15 +44,37 @@ mutableArray[2] = 'x'
 // Za równo pętlą for
 for(let x = 0; x < mutableArray.length; x++) {
 	// wtedy odnosimy się do index'ów tablicy:
+	if(x === 1) {
+		continue;
+	}
+	if(x === 3) {
+		break;
+	}
 	console.log(mutableArray[x]);
+	
 }
 // jak i składnią pętli "for of"
-for(let element of mutableArray) {
+for(const element of mutableArray) {
 	console.log(element);
 }
+for(const element of 'Hello') {
+	console.log(element);
+}
+
 // jak i wbudowaną metodą forEach
 mutableArray.forEach(function ( element ) {
 	console.log(element)
+})
+
+mutableArray.forEach((e, i) => {
+	if(i === 1) {
+		return;
+	}
+	if(i >= 3) {
+		return;
+	}
+	console.log(e);
+	console.log(i);
 })
 
 // Metody mutujące tablicę (zmieniające jej składniki):
