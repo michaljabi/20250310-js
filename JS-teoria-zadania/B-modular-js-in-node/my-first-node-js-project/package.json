@@ -4,6 +4,7 @@
   "description": "> Napiszę program do wyświetlania bannerów w terminalu. Użyję do tego JavaScript w Node.js potem dorzucę TS (`tsc` compiler)",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "node ./src/main.js",
     "list-catalogues": "dir",
     "ts-init": "tsc --init",

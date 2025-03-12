@@ -29,6 +29,6 @@ try {
   }
 } finally {
   // przykład es-lint errora:
-  let makeBanner = 10
+  const makeBanner = 10
   console.log('I will always run...', makeBanner)
 }
