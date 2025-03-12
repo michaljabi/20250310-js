@@ -104,3 +104,14 @@ npm init @eslint/config@latest
 ```json
   "lint": "eslint src"
 ```
+
+20. Dodatkowy zestaw reguł do naszego [eslint.config.js](./eslint.config.js):
+
+```javascript 
+{
+    rules: {
+      'no-var': ['error'],
+      'no-shadow': ['warn']
+    },
+  }
+```

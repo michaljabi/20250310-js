@@ -9,9 +9,9 @@
 // export default 567;
 // export default 'HELLO';
 
-export function makeBanner(text = '') {
-    const border = '*'.repeat(text.length + 4);
-    console.log(border)
-    console.log(`* ${text.toUpperCase()} *`)
-    console.log(border)
+export function makeBanner(text: string) {
+  const border = '*'.repeat(text.length + 4)
+  console.log(border)
+  console.log(`* ${text.toUpperCase()} *`)
+  console.log(border)
 }

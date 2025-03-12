@@ -1,10 +1,12 @@
 import { divideBy, MathError } from './app/math-operations.js'
 import { makeBanner } from './make-banner.js'
 
+import _ from 'lodash'
+
 // import NN, { TEST as myTest, hello } from "./make-banner.js"; // import default i alias importu named.
 // import * as collection from "./make-banner.js"; // namespace import
 
-console.log('Witaj w BannerShow')
+console.log('Witaj w BannerShow', _.last(['a', 'b', 'c']))
 
 makeBanner('To jest mój test!')
 // console.log(collection.default)
