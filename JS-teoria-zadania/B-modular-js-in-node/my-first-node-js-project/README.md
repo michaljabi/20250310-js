@@ -57,3 +57,14 @@ npm run start
 12.  `math-operations.js`  powinno exportować funkcję  `divideBy`  , zaprojektuj ją tak aby nie pozwalała dzielić przez  `0`  - rzucała wyjątek (  `new Error` ) z odpowiednim komunikatem.
 13. Wywołaj  divideBy  bez błędu i z błędem (przekaż  0  jako 2gi argument) w  `main.js`  i obsłuż blokami  `try` - `catch` .
 14. skorzystaj z materiału:  `c202` i dokumentacji MDN 
+
+15. Przechodzimy na  typescript  - migrujemy projekt z  `.js`  do  `.ts`. na dobry początek instalujemy TS komendą: 
+```
+npm install -D typescript
+```
+
+16. dopisujemy skrypt który pozwoli nam wygenerować konfigurację typescripta:  
+```json
+"ts-init": "tsc --init"`
+```
+i uruchamiamy go!
