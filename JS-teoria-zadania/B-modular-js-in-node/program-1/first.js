@@ -1,3 +1,4 @@
+// Składnia tzw CommonJS require/module.exports (2009r.) 
 const sayHelloWorld = require('./say-hello-world');
 
 sayHelloWorld.sayHello();
