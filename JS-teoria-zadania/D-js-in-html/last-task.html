@@ -28,19 +28,56 @@
 
 <body>
 
-    <script>
+    <!-- <script>
         const btn = document.createElement("button");
 
-        let x = 0
-        btn.innerText = "0";
+        let x = 23
+        updateState(x);
 
         btn.addEventListener("click", () => {
             // console.log('!!!')
             x++;
-            btn.innerText = String(x);
+            updateState(x);
         })
 
+        function updateState(x) {
+            btn.innerText = String(x);
+        }
+
         document.body.append(btn)
+    </script> -->
+
+    <script>
+        const BTN_COUNTER_KEY = 'btn.counter';
+
+        function BtnComponent(counter = 0, saveState = false) {
+            const btn = document.createElement("button");
+            const updateState = (s) => {
+                btn.innerText = String(s);
+                if (saveState) {
+                    localStorage.setItem(BTN_COUNTER_KEY, s)
+                }
+            }
+
+            const initialCount = localStorage.getItem(BTN_COUNTER_KEY);
+            if (initialCount && saveState) {
+                counter = Number(initialCount);
+            }
+
+            updateState(counter);
+            btn.addEventListener("click", () => {
+                counter++;
+                updateState(counter);
+            })
+
+
+            // function updateState(x) {
+            //     btn.innerText = String(x);
+            // }
+            return btn
+        }
+
+        document.body.append(BtnComponent(10, true), BtnComponent(90, true), BtnComponent(100))
     </script>
 </body>
 
