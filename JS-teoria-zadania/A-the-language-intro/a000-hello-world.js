@@ -1,9 +1,9 @@
 var welcomeMessage = 'Hello World!'
 
-console.log(welcomeMessage);
+console.log(welcomeMessage)
 
 function hello() {
-   console.log('Hello!')
+  console.log('Hello!')
 }
 
 hello()
@@ -13,13 +13,12 @@ hello()
 let x = 0
 
 setInterval(() => {
-   console.log('! :) ....', x++);
+  console.log('! :) ....', x++)
 }, 1000)
 
-console.log(80 + 90 + '?' + '!');
+console.log(80 + 90 + '?' + '!')
 
 console.log(Math.PI)
-
 
 // skosko
 // try {
@@ -28,9 +27,7 @@ console.log(Math.PI)
 //    console.log(e.message);
 // }
 
-
 console.log('!')
-
 
 // to jest prosty komentarz liniowy
 
@@ -47,7 +44,7 @@ blokowy
 
 // 1. otwarcia terminala
 // 2. sprawdzenia poleceniem `node -v` czy Node.js działa
-   // > node -v
-// 3. uruchomienia pliku poleceniem: 
-   // > node dokladna/sciezka/do/pliku/a000-hello-world.js
+// > node -v
+// 3. uruchomienia pliku poleceniem:
+// > node dokladna/sciezka/do/pliku/a000-hello-world.js
 // 4. zmień napis Hello World na Witaj Świecie - i uruchom plik ponownie.
